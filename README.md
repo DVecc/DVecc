@@ -62,7 +62,7 @@ Successfully modernized a legacy Classic ASP application by migrating it to PHP 
 
 ### 📫 Connect With Me
 
-- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/dvecc)
+- 💼 LinkedIn: [LinkedIn](https://linkedin.com/in/dvecc)
 - 📧 Email: vincent.delvecchio@dvecc.simplelogin.com
 
 ---
