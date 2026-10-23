@@ -54,13 +54,21 @@ Alongside WACS modernization, I maintained and updated the [DEP Cleanup Sites ap
 
 ### Repairing site-watch email notifications
 
-The application's "Watch This Site" feature let users subscribe to email notifications when a site entered a different phase. When I worked on it, errors in notification processing could cause the entire procedure to fail, rather than affecting only an individual email.
+The application's "Watch This Site" feature let users subscribe to email notifications when a site entered a different phase. Incorrect exception-handling logic and operation ordering in PL/SQL meant that, if an email field failed validation or could not be loaded, the procedure stopped at that point. Remaining notifications were left unprocessed.
 
-I analyzed an existing stored database package of more than 2,000 lines to understand its processing flow and locate the notification error. I modified the package to correct that error and revised exception handling throughout the package.
+I analyzed an existing PL/SQL package of more than 2,000 lines to understand its processing flow and locate the notification error. I corrected the handling and ordering so that those email-field failures did not stop processing the remaining notifications, and revised exception handling throughout the package.
 
 I also added code to record errors in a database table. A separate procedure used those records to email supervisors a daily error report covering the nightly package run. This gave supervisors a recurring way to see processing errors and gave the team stored error records to investigate.
 
-The work combined debugging inherited database logic with improving operational visibility. My contribution was repairing and extending an existing package, rather than writing the entire package from scratch. No measured delivery-rate improvement or guarantee that every possible failure was isolated is claimed here.
+### Testing the notification and error-reporting changes
+
+I added test data to the local database, ran the stored procedures and compared the results with the expected behavior. This checked the notification fix and the error logging and reporting changes.
+
+For the supervisor report, I created test entries in the error-recording table and checked the resulting email. I also verified that an error recorded by the Watch This Site PL/SQL appeared in the supervisor email, checking the path from procedure-generated error to stored record to report.
+
+The changes were tested locally before progressing through alpha, beta and production servers. Deployment verification and testing took place at each stage before promotion to the next environment.
+
+This work combined debugging inherited database logic, containing individual notification failures and making nightly processing errors visible to supervisors. My contribution was repairing and extending an existing package; I did not write the full package from scratch.
 
 ### Adding control over the registry map layer
 
