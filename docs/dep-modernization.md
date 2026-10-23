@@ -1,7 +1,13 @@
-# Modernizing reporting workflows at Florida DEP
+# Modernizing WACS and maintaining applications at Florida DEP
 
 **Role:** Application Systems Programmer, September 2023–April 2026  
-**Technologies:** Classic ASP, PHP, CodeIgniter MVC, SQL, PL/SQL, HTML, CSS and JavaScript
+**Technologies:** Classic ASP, PHP, CodeIgniter MVC, SQL, PL/SQL, HTML, CSS, JavaScript, Java and Spring
+
+## Application and migration scope
+
+At the Florida Department of Environmental Protection, I translated most of the [WACS application](https://prodapps.dep.state.fl.us/www-wacs/) from Classic ASP to PHP/CodeIgniter MVC. I estimate that my migration work covered roughly 80–90% of the application. This is my retrospective estimate of scope, rather than a measured code or feature count.
+
+The public application includes solid waste facility reports and reference information. The [Solid Waste Facility Inventory Report](https://prodapps.dep.state.fl.us/www-wacs/Solidwastedatasystem/facilityinventoryreport) provides a concrete example of the reporting workflows involved: users can locate facilities or generate lists using district, county and facility-class criteria. Its public form also offers browser or Excel output and selectable report columns. These describe the application's visible capabilities; they do not imply that I independently authored every feature.
 
 ## The reporting workflow
 
@@ -35,6 +41,10 @@ The migrated workflows provided report-building and report-generation functional
 This work required understanding existing behavior and expressing it in a different application structure. It also reinforced the distinction between validating input and binding query values: both matter, and neither should be described as a substitute for the other.
 
 I observed substantially faster page responses following migration, but formal before-and-after benchmarks were not collected. I therefore do not claim a measured performance percentage or attribute the observed difference to PHP alone.
+
+## Additional application maintenance: Java and Spring
+
+Alongside WACS modernization, I maintained and updated the [DEP Cleanup Sites application](https://prodapps.dep.state.fl.us/dep-clnup/), a separate application written in Java with a Spring backend. Its public interface presents a contamination locator map. This work extended my professional experience beyond PHP/CodeIgniter to maintaining an existing Java/Spring application.
 
 ## Scope
 

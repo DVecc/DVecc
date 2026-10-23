@@ -1,7 +1,8 @@
 # Vincent Del Vecchio
 
 Software developer based in Florida, with professional experience modernizing legacy
-web applications using PHP and CodeIgniter MVC. I also build C++ graphics and emulation
+web applications using PHP and CodeIgniter MVC, and maintaining Java/Spring applications.
+I also build C++ graphics and emulation
 projects to explore how software works below the framework level.
 
 **Seeking remote software development opportunities in the United States.**
@@ -10,8 +11,9 @@ projects to explore how software works below the framework level.
 
 ### Legacy web application modernization
 
-At Florida DEP, I worked on migrating Classic ASP functionality to PHP/CodeIgniter while
-maintaining existing business workflows. [Read the high-level case study](docs/dep-modernization.md).
+At Florida DEP, I migrated most of the WACS application from Classic ASP to
+PHP/CodeIgniter MVC and maintained the Java/Spring-based DEP Cleanup Sites application.
+[Read the case study](docs/dep-modernization.md).
 
 ### CHIP-8 emulator — C++17 / Vulkan / Win32
 
@@ -36,8 +38,8 @@ A staged 3D scene with a movable camera and switchable projections.
 
 ## Skills
 
-- **Professional web development:** PHP, CodeIgniter MVC, JavaScript, HTML/CSS, SQL.
-- **Additional languages and projects:** Java, Python, C++, graphics programming, Vulkan and OpenGL.
+- **Professional web development:** PHP, CodeIgniter MVC, Java, Spring, JavaScript, HTML/CSS, SQL and PL/SQL.
+- **Additional languages and projects:** Python, C++, graphics programming, Vulkan and OpenGL.
 - **Education:** B.S. Computer Science, Southern New Hampshire University.
 
 ## Contact
