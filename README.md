@@ -45,7 +45,7 @@ I'm a software developer with a passion for building clean, efficient, and engag
 ### 🌟 Featured Projects
 
 #### CHIP-8 Emulator
-A modern CHIP-8 emulator written in C++ with a Vulkan rendering backend, featuring accurate opcode implementation, audio support, and a polished desktop experience.
+A [Windows CHIP-8 emulator](https://github.com/DVecc/Chip8Emulator) built with C++17, Vulkan, Win32 input, and working miniaudio sound. Includes reproducible CMake builds, build-time shader compilation, and passing regression checks for sprite drawing, collisions, timers, key input, and ROM-size validation. [Gameplay recording](https://github.com/DVecc/Chip8Emulator/blob/main/docs/media/pong-gameplay.gif) and build instructions are available on `main`. CHIP-8 compatibility is partial; ROMs are not packaged with the executable.
 
 #### Legacy Application Modernization
 Successfully modernized a legacy Classic ASP application by migrating it to PHP with CodeIgniter, improving maintainability, performance, and user experience.
