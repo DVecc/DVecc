@@ -13,14 +13,21 @@ projects to explore how software works below the framework level.
 At Florida DEP, I worked on migrating Classic ASP functionality to PHP/CodeIgniter while
 maintaining existing business workflows. [Read the high-level case study](docs/dep-modernization.md).
 
-### CHIP-8 emulator — C++ / Vulkan / Win32
+### CHIP-8 emulator — C++17 / Vulkan / Win32
 
-An interpreter with opcode dispatch, a 64 × 32 framebuffer, sprite collision logic and
-keyboard input, connected to a Vulkan renderer.
+Windows emulator with opcode dispatch, a 64 × 32 framebuffer, XOR sprite drawing,
+collision reporting, keyboard input and working miniaudio sound. The emulator source
+and build instructions are on `main`.
 
-[Explore the emulator source](https://github.com/DVecc/Chip8Emulator/tree/Chip8-Rendering).
-The emulator is on `Chip8-Rendering`; the default branch contains the earlier Pong project.
-Compatibility and runtime limitations should be evaluated against the branch's source.
+[Source and build instructions](https://github.com/DVecc/Chip8Emulator) ·
+[Windows x64 preview](https://github.com/DVecc/Chip8Emulator/releases/tag/v0.1.0) ·
+[Gameplay recording](https://github.com/DVecc/Chip8Emulator/blob/main/docs/media/pong-gameplay.gif)
+
+CMake builds compile the shaders, and Windows CI runs core regression checks for
+sprite drawing, collisions, timers, key-wait behavior and oversized-ROM rejection.
+The app has been run locally with Pong and Tetris. Windows is the only supported
+platform, and CHIP-8 compatibility is partial. Bring your own ROMs; none are included
+in the current source tree or release package.
 
 ### Witch's Workbench — OpenGL
 
