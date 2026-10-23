@@ -1,70 +1,40 @@
-# Hi there, I'm Vincent Del Vecchio 👋
+# Vincent Del Vecchio
 
-## Software Engineer
+Software developer based in Florida, with professional experience modernizing legacy
+web applications using PHP and CodeIgniter MVC. I also build C++ graphics and emulation
+projects to explore how software works below the framework level.
 
-I'm a software developer with a passion for building clean, efficient, and engaging applications. I enjoy working across the stack, from crafting responsive user interfaces to designing reliable backend systems. My interests include systems programming, web development, graphics programming, and creating polished user experiences.
+**Seeking remote software development opportunities in the United States.**
 
----
+## Selected work
 
-### 🚀 About Me
+### Legacy web application modernization
 
-- 💻 Software Engineer with a Bachelor's degree in Computer Science
-- 🛠️ Experienced with modern web technologies and backend development
-- 🎮 Passionate about low-level programming, emulation, and graphics
-- 🌱 Always learning new technologies and improving my craft
-- 📍 Based in Florida, United States
+At Florida DEP, I worked on migrating Classic ASP functionality to PHP/CodeIgniter while
+maintaining existing business workflows. [Read the high-level case study](docs/dep-modernization.md).
 
----
+### CHIP-8 emulator — C++ / Vulkan / Win32
 
-### 🛠️ Technologies & Tools
+An interpreter with opcode dispatch, a 64 × 32 framebuffer, sprite collision logic and
+keyboard input, connected to a Vulkan renderer.
 
-#### Languages
-![C++](https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+[Explore the emulator source](https://github.com/DVecc/Chip8Emulator/tree/Chip8-Rendering).
+The emulator is on `Chip8-Rendering`; the default branch contains the earlier Pong project.
+Compatibility and runtime limitations should be evaluated against the branch's source.
 
-#### Frontend
-![React](https://img.shields.io/badge/-React-20232A?style=for-the-badge&logo=react)
-![Angular](https://img.shields.io/badge/-Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+### Witch's Workbench — OpenGL
 
-#### Backend & Database
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![CodeIgniter](https://img.shields.io/badge/-CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+A staged 3D scene with a movable camera and switchable projections.
+[Source and preview](https://github.com/DVecc/3D-Rendering-of-a-Witches-Workbench-Using-OpenGL).
 
-#### Tools
-![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Vulkan](https://img.shields.io/badge/-Vulkan-AC162C?style=for-the-badge&logo=vulkan&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+## Skills
 
----
+- **Professional web development:** PHP, CodeIgniter MVC, JavaScript, HTML/CSS, SQL.
+- **Additional languages and projects:** Java, Python, C++, graphics programming, Vulkan and OpenGL.
+- **Education:** B.S. Computer Science, Southern New Hampshire University.
 
-### 🌟 Featured Projects
+## Contact
 
-#### CHIP-8 Emulator
-A modern CHIP-8 emulator written in C++ with a Vulkan rendering backend, featuring accurate opcode implementation, audio support, and a polished desktop experience.
+[LinkedIn](https://linkedin.com/in/dvecc) · [Email](mailto:vincent.delvecchio@dvecc.simplelogin.com)
 
-#### Legacy Application Modernization
-Successfully modernized a legacy Classic ASP application by migrating it to PHP with CodeIgniter, improving maintainability, performance, and user experience.
-
----
-
-### 📈 GitHub Stats
-
-![Vincent's GitHub Stats](https://github-readme-stats.vercel.app/api?username=DVecc&show_icons=true&theme=github_dark)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DVecc&layout=compact&theme=github_dark)
-
----
-
-### 📫 Connect With Me
-
-- 💼 LinkedIn: [LinkedIn](https://linkedin.com/in/dvecc)
-- 📧 Email: vincent.delvecchio@dvecc.simplelogin.com
-
----
-
-> "Great software is built one thoughtful decision at a time."
+Profile and case-study drafts prepared with AI assistance for author review.
