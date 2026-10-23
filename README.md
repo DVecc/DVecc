@@ -1,70 +1,49 @@
-# Hi there, I'm Vincent Del Vecchio 👋
+# Vincent Del Vecchio
 
-## Software Engineer
+I'm a software developer based in Florida. I've modernized legacy web applications
+using PHP and CodeIgniter MVC and maintained Java/Spring applications. I also build
+C++ graphics and emulation projects.
 
-I'm a software developer with a passion for building clean, efficient, and engaging applications. I enjoy working across the stack, from crafting responsive user interfaces to designing reliable backend systems. My interests include systems programming, web development, graphics programming, and creating polished user experiences.
+**Seeking remote software development opportunities in the United States.**
 
----
+## Selected work
 
-### 🚀 About Me
+### Legacy web application modernization
 
-- 💻 Software Engineer with a Bachelor's degree in Computer Science
-- 🛠️ Experienced with modern web technologies and backend development
-- 🎮 Passionate about low-level programming, emulation, and graphics
-- 🌱 Always learning new technologies and improving my craft
-- 📍 Based in Florida, United States
+At Florida DEP, I migrated most of the WACS application from Classic ASP to
+PHP/CodeIgniter MVC and maintained the Java/Spring-based DEP Cleanup Sites application.
+I checked migrated reports against ASP output, repaired site-watch email notifications
+and added database error logging with daily supervisor reports. I also collaborated
+with the GIS team to add a customer-requested map-layer visibility toggle.
+[Read the case study](docs/dep-modernization.md).
 
----
+### CHIP-8 emulator — C++17 / Vulkan / Win32
 
-### 🛠️ Technologies & Tools
+Windows emulator with opcode dispatch, a 64 × 32 framebuffer, XOR sprite drawing,
+collision reporting, keyboard input and working miniaudio sound. The emulator source
+and build instructions are on `main`.
 
-#### Languages
-![C++](https://img.shields.io/badge/-C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+[Source and build instructions](https://github.com/DVecc/Chip8Emulator) ·
+[Windows x64 preview](https://github.com/DVecc/Chip8Emulator/releases/tag/v0.1.0) ·
+[Gameplay recording](https://github.com/DVecc/Chip8Emulator/blob/main/docs/media/pong-gameplay.gif)
 
-#### Frontend
-![React](https://img.shields.io/badge/-React-20232A?style=for-the-badge&logo=react)
-![Angular](https://img.shields.io/badge/-Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+CMake builds compile the shaders, and Windows CI runs core regression checks for
+sprite drawing, collisions, timers, key-wait behavior and oversized-ROM rejection.
+Local testing includes Pong and Tetris. Windows is the only supported
+platform, and CHIP-8 compatibility is partial. Bring your own ROMs; none are included
+in the current source tree or release package.
 
-#### Backend & Database
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![CodeIgniter](https://img.shields.io/badge/-CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+### Witch's Workbench — OpenGL
 
-#### Tools
-![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Vulkan](https://img.shields.io/badge/-Vulkan-AC162C?style=for-the-badge&logo=vulkan&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+A staged 3D scene with a movable camera and switchable projections.
+[Source and preview](https://github.com/DVecc/3D-Rendering-of-a-Witches-Workbench-Using-OpenGL).
 
----
+## Skills
 
-### 🌟 Featured Projects
+- **Professional web development:** PHP, CodeIgniter MVC, Java, Spring, JavaScript, HTML/CSS, SQL and PL/SQL.
+- **Additional languages and projects:** Python, C++, graphics programming, Vulkan and OpenGL.
+- **Education:** B.S. Computer Science, Southern New Hampshire University.
 
-#### CHIP-8 Emulator
-A [Windows CHIP-8 emulator](https://github.com/DVecc/Chip8Emulator) built with C++17, Vulkan, Win32 input, and working miniaudio sound. Includes reproducible CMake builds, build-time shader compilation, and passing regression checks for sprite drawing, collisions, timers, key input, and ROM-size validation. [Gameplay recording](https://github.com/DVecc/Chip8Emulator/blob/main/docs/media/pong-gameplay.gif) and build instructions are available on `main`. CHIP-8 compatibility is partial; ROMs are not packaged with the executable.
+## Contact
 
-#### Legacy Application Modernization
-Successfully modernized a legacy Classic ASP application by migrating it to PHP with CodeIgniter, improving maintainability, performance, and user experience.
-
----
-
-### 📈 GitHub Stats
-
-![Vincent's GitHub Stats](https://github-readme-stats.vercel.app/api?username=DVecc&show_icons=true&theme=github_dark)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DVecc&layout=compact&theme=github_dark)
-
----
-
-### 📫 Connect With Me
-
-- 💼 LinkedIn: [LinkedIn](https://linkedin.com/in/dvecc)
-- 📧 Email: vincent.delvecchio@dvecc.simplelogin.com
-
----
-
-> "Great software is built one thoughtful decision at a time."
+[LinkedIn](https://linkedin.com/in/dvecc) · [Email](mailto:vincent.delvecchio@dvecc.simplelogin.com)
