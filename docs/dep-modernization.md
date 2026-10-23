@@ -48,9 +48,19 @@ This work required understanding existing behavior and expressing it in a differ
 
 I observed substantially faster page responses following migration, but formal before-and-after benchmarks were not collected. I therefore do not claim a measured performance percentage or attribute the observed difference to PHP alone.
 
-## Additional application maintenance: Java and Spring
+## Cleanup Sites: application maintenance and backend reliability
 
 Alongside WACS modernization, I maintained and updated the [DEP Cleanup Sites application](https://prodapps.dep.state.fl.us/dep-clnup/), a separate application written in Java with a Spring backend. Its public interface presents a contamination locator map. This work extended my professional experience beyond PHP/CodeIgniter to maintaining an existing Java/Spring application.
+
+### Repairing site-watch email notifications
+
+The application's "Watch This Site" feature let users subscribe to email notifications when a site entered a different phase. When I worked on it, errors in notification processing could cause the entire procedure to fail, rather than affecting only an individual email.
+
+I analyzed an existing stored database package of more than 2,000 lines to understand its processing flow and locate the notification error. I modified the package to correct that error and revised exception handling throughout the package.
+
+I also added code to record errors in a database table. A separate procedure used those records to email supervisors a daily error report covering the nightly package run. This gave supervisors a recurring way to see processing errors and gave the team stored error records to investigate.
+
+The work combined debugging inherited database logic with improving operational visibility. My contribution was repairing and extending an existing package, rather than writing the entire package from scratch. No measured delivery-rate improvement or guarantee that every possible failure was isolated is claimed here.
 
 ### Adding control over the registry map layer
 

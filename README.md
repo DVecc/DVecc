@@ -13,8 +13,9 @@ projects to explore how software works below the framework level.
 
 At Florida DEP, I migrated most of the WACS application from Classic ASP to
 PHP/CodeIgniter MVC and maintained the Java/Spring-based DEP Cleanup Sites application.
-I checked migrated reports against ASP output and collaborated with the GIS team to
-add a customer-requested map-layer visibility toggle.
+I checked migrated reports against ASP output, repaired site-watch email notifications
+and added database error logging with daily supervisor reports. I also collaborated
+with the GIS team to add a customer-requested map-layer visibility toggle.
 [Read the case study](docs/dep-modernization.md).
 
 ### CHIP-8 emulator — C++17 / Vulkan / Win32
