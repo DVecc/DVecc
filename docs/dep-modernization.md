@@ -34,6 +34,12 @@ I also worked on PL/SQL stored procedures supporting daily database loads, error
 
 That work gave me experience with both the user-facing reporting application and the database processes supporting recurring operations.
 
+## Verifying the migration against the legacy application
+
+I compared the migrated application's results directly against the Classic ASP version. I checked the reports visually and exported results to Excel for diff comparisons of the returned data. This let me assess both presentation and data consistency against the existing application, rather than relying on appearance alone.
+
+These comparisons were my approach to checking the migrated reporting behavior. They were not a formal performance benchmark or a claim of exhaustive automated test coverage.
+
 ## Outcome and engineering lessons
 
 The migrated workflows provided report-building and report-generation functionality in PHP/CodeIgniter MVC. My contribution included form handling, server-side validation, conditional SQL filtering, query bindings and database procedure work.
@@ -46,6 +52,14 @@ I observed substantially faster page responses following migration, but formal b
 
 Alongside WACS modernization, I maintained and updated the [DEP Cleanup Sites application](https://prodapps.dep.state.fl.us/dep-clnup/), a separate application written in Java with a Spring backend. Its public interface presents a contamination locator map. This work extended my professional experience beyond PHP/CodeIgniter to maintaining an existing Java/Spring application.
 
+### Adding control over the registry map layer
+
+The Florida Institutional Controls Registry layer was originally always visible. The customer requested a way to turn its visibility on and off using the application's filters beneath the title bar.
+
+The application used an embedded ArcGIS map maintained by the GIS team, so the change required coordination across application boundaries. I collaborated with that team to have them add the necessary functionality to their API. I then used that functionality in the Cleanup Sites application to implement the registry-layer visibility toggle.
+
+The resulting control gave users a choice over whether the registry layer appeared on the map. The GIS team supplied the map API capability; my contribution was coordinating that dependency and integrating it with the application's filter controls. This example shows how I translated a customer request into an application change while working with the team responsible for the embedded map.
+
 ## Scope
 
-This account describes my reported contributions. It contains no employer source code, records, credentials, internal screenshots or system diagrams, and does not imply an employer endorsement. Prepared with AI assistance and updated with implementation details I supplied for review.
+This account describes my contributions, with public application links provided for context. It contains no employer source code, records, credentials, internal screenshots or system diagrams, and does not imply an employer endorsement. Prepared with AI assistance using implementation details I supplied.

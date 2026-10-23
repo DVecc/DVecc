@@ -13,6 +13,8 @@ projects to explore how software works below the framework level.
 
 At Florida DEP, I migrated most of the WACS application from Classic ASP to
 PHP/CodeIgniter MVC and maintained the Java/Spring-based DEP Cleanup Sites application.
+I checked migrated reports against ASP output and collaborated with the GIS team to
+add a customer-requested map-layer visibility toggle.
 [Read the case study](docs/dep-modernization.md).
 
 ### CHIP-8 emulator — C++17 / Vulkan / Win32
@@ -46,4 +48,4 @@ A staged 3D scene with a movable camera and switchable projections.
 
 [LinkedIn](https://linkedin.com/in/dvecc) · [Email](mailto:vincent.delvecchio@dvecc.simplelogin.com)
 
-Profile and case-study drafts prepared with AI assistance for author review.
+Profile and case study prepared with AI assistance using implementation details I supplied.
