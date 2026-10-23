@@ -1,9 +1,8 @@
 # Vincent Del Vecchio
 
-Software developer based in Florida, with professional experience modernizing legacy
-web applications using PHP and CodeIgniter MVC, and maintaining Java/Spring applications.
-I also build C++ graphics and emulation
-projects to explore how software works below the framework level.
+I'm a software developer based in Florida. I've modernized legacy web applications
+using PHP and CodeIgniter MVC and maintained Java/Spring applications. I also build
+C++ graphics and emulation projects.
 
 **Seeking remote software development opportunities in the United States.**
 
@@ -30,7 +29,7 @@ and build instructions are on `main`.
 
 CMake builds compile the shaders, and Windows CI runs core regression checks for
 sprite drawing, collisions, timers, key-wait behavior and oversized-ROM rejection.
-The app has been run locally with Pong and Tetris. Windows is the only supported
+Local testing includes Pong and Tetris. Windows is the only supported
 platform, and CHIP-8 compatibility is partial. Bring your own ROMs; none are included
 in the current source tree or release package.
 
@@ -48,5 +47,3 @@ A staged 3D scene with a movable camera and switchable projections.
 ## Contact
 
 [LinkedIn](https://linkedin.com/in/dvecc) · [Email](mailto:vincent.delvecchio@dvecc.simplelogin.com)
-
-Profile and case study prepared with AI assistance using implementation details I supplied.
