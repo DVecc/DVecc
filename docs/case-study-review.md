@@ -1,25 +1,24 @@
-# Author review before merging the case study
+# Case study review notes
 
-The draft uses the work history you provided, not access to Florida DEP's systems.
-Please verify each statement, especially personal ownership and scope.
+## Details confirmed by the author
 
-Add ONE concrete, non-confidential example answering:
+- Reporting pages paired a criteria-entry form with a generated report.
+- The author received and validated submitted fields and constructed SQL with conditional filters.
+- User-entered query values were passed through query bindings to mitigate SQL injection risks.
+- The author also worked on PL/SQL stored procedures for daily database loads, error reports and email notifications.
 
-1. What did the old page/workflow do, in general terms?
-2. Which part did you personally implement?
-3. What went wrong or required a decision?
-4. What options did you consider and why did you choose one?
-5. How did you check that existing behavior still worked?
+## Metrics and attribution
 
-You previously reported roughly 80% migrated and rendering time moving from around
-2 seconds to under 1 second. These are NOT in the public-facing narrative because the
-denominator, measurement method, and your attribution need confirmation. If you can
-substantiate them, add the scope and method alongside the result; otherwise omit them.
+Formal performance benchmarks were not collected. Keep numerical speed improvements and the approximate migration percentage out of the resume and case-study outcome claims. The narrative labels faster responses as an observation, without assigning the cause to PHP alone.
 
-Possible resume bullet based on the conservative draft:
+The PL/SQL wording deliberately says "worked on" rather than claiming sole authorship or distinguishing new procedures from maintenance. Refine that only when the author's exact contribution is established.
 
-> Migrated legacy Classic ASP functionality to PHP/CodeIgniter MVC, supporting existing
-> business workflows through backend and user-interface changes.
+## Optional detail for a future revision
 
-Replace broad wording with the exact application scope and a specific contribution you
-can confidently discuss. Avoid adding unverified testing procedures or team leadership.
+A specific non-confidential filter example or database-load issue could add depth. Do not invent validation rules, stored-procedure ownership, testing processes, incident reductions or business metrics.
+
+## Resume bullets based on confirmed details
+
+- Migrated legacy Classic ASP report-builder pages and generated reports to PHP/CodeIgniter MVC, implementing forms and server-side input validation.
+- Constructed dynamic SQL filters from user-entered report criteria and used query bindings to mitigate SQL injection risks.
+- Worked on PL/SQL stored procedures supporting daily database loads, error-report generation and email notifications.
